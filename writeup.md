@@ -22,7 +22,8 @@ The pipeline is roughly divided into 7 steps.
 7. Cluster, average and extrapolate the lines output from the Hough transform step and produce a clear left and a clear right line.
 
 The following image shows the pipeline flows:
-![pipeline][./test_images_output/pipeline_demo.png]
+
+![pipeline](./test_images_output/pipeline_demo.png)
 
 I did not modify the draw_lines function to do the extrapolation jobs, instead I made a delegate class called `DrawLinesExtrapolate` to calculate the extrapolation and manage possible improvements there.
 
